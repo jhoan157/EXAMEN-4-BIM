@@ -1,0 +1,87 @@
+body{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+justify-content: center;
+align-items: center;
+background-image: linear-gradient(rgb(0, 255, 42), rgb(38, 0, 255), rgb(0, 0, 0));
+}
+.Arroz{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    animation-name: cambio; 
+    animation-duration: 0.5s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    background-color: rgb(255, 0, 221);
+    animation-play-state: paused;
+
+}   
+.so{
+    width: 95%;
+    height: 95%;
+    border-radius: 10rem;
+    object-fit: cover;
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-play-state: paused;
+
+}
+.ana{
+    height: 50px;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+}
+
+
+.play-btn{
+    width: auto;
+    height: auto;
+    border-radius: 100%;
+}
+.pause-btn{
+    width: auto;
+    height: auto;
+    border-radius: 100%;
+}
+.stop-btn{
+    width: auto;
+    height: auto;
+    border-radius: 100%;
+}
+
+
+@keyframes cambio {
+    0%{ 
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
